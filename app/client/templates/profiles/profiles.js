@@ -6,8 +6,6 @@ Template.Profiles.events({
 	'submit form': function(e, tmpl){
 		e.preventDefault();
 
-		var profile = Profiles.findOne({owner_id: Meteor.userId()});
-		var pid = profile._id;
 
 		if (!profile){
 			Profiles.insert({
@@ -20,6 +18,9 @@ Template.Profiles.events({
 			});
 			console.log("profile added");
 		}else{
+
+			var profile = Profiles.findOne({owner_id: Meteor.userId()});
+			var pid = profile._id;
 
 			Profiles.update({_id: pid},
 			{
@@ -42,16 +43,16 @@ Template.Profiles.events({
 /*****************************************************************************/
 Template.Profiles.helpers({
 	placeholderText: function ()
-    {
-        var profile = Profiles.findOne({owner_id: Meteor.userId()});
-        var textHelper = {};
+	{
+		var profile = Profiles.findOne({owner_id: Meteor.userId()});
+		var textHelper = {};
         // console.log(profile);
         if (profile)
         {
-            textHelper.name = profile.name;
-            textHelper.picture_url = profile.picture_url;
-            textHelper.neighbourhood = profile.neighbourhood;
-            textHelper.bio = profile.bio;
+        	textHelper.name = profile.name;
+        	textHelper.picture_url = profile.picture_url;
+        	textHelper.neighbourhood = profile.neighbourhood;
+        	textHelper.bio = profile.bio;
         }
 
         console.log(textHelper);

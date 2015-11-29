@@ -1,11 +1,13 @@
 /*****************************************************************************/
 /* Home: Style */
 /*****************************************************************************/
-.home {
+.home body{
+	background: linear-gradient(#FFFFFF, #FFCDB2);
+
 }
 
 .map-container {
-  width: 800px;
-  max-width: 100%;
-  height: 500px;
+	width: 800px;
+	max-width: 100%;
+	height: 500px;
 }

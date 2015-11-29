@@ -16,7 +16,11 @@ Template.Home.helpers({
         // Map initialization options
         return {
           center: new google.maps.LatLng(49.2827, -123.1207),
+<<<<<<< HEAD
           zoom: 12
+=======
+          zoom: 8
+>>>>>>> d5ca487829077758d35103bc0074821eea87cdc3
         };
 
 
@@ -34,11 +38,16 @@ Template.Home.onCreated(function () {
       var marker = new google.maps.Marker({
         position: map.options.center,
         map: map.instance,
-        title: "Jenny"
+        title: "Going Grocery Shopping"
       });
 
       var infowindow = new google.maps.InfoWindow({
+<<<<<<< HEAD
         content: "Cooking with Local Food - just bring yourself"
+=======
+        content: "<h3>Going Grocery Shopping</h3>"+
+        "<h5>Just pay for your own groceries, free ride with Jay.</h5>"
+>>>>>>> d5ca487829077758d35103bc0074821eea87cdc3
       });
 
       marker.addListener('click', function() {
