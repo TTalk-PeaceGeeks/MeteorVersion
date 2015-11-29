@@ -15,7 +15,7 @@ cost:*/
 
 	Events.insert({
 		name: tmpl.find('#name').value,
-		create_by: Meteor.userId(),
+		created_by: Meteor.userId(),
 		location: tmpl.find('#location').value,
 		date: tmpl.find('#eventDate').value,
 		picture_url: tmpl.find('#picture').value,
