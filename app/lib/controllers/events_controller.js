@@ -51,5 +51,8 @@ EventsController = RouteController.extend({
   onAfterAction: function () {
   },
   onStop: function () {
+  },
+  detail: function(){
+    this.render('EventDetail', {});
   }
 });

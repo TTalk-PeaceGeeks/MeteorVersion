@@ -22,3 +22,10 @@ Router.route('events', {
   controller: 'EventsController',
   where: 'client'
 });
+
+Router.route('event/:_id', {
+  name: 'event.detail',
+  controller: 'EventsController',
+  where: 'client',
+  action: 'detail'
+});
