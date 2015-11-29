@@ -24,6 +24,7 @@ The andoid and ios is to meet the locals at their eyelevel. The web aplication i
 
 1. Choose language. This will help us identify if they're newcomers or locals. But as well take into account that newcomers might not speak english, and need their app to be in their language for it to be useful.
 2. Profile setup. Here we get information from the users (* = mandatory), profile picture, sex*, name/nickname*, email*, neigbourghood, bio.
+![Alt text](/img/profile.jpg)
 3. Map. Here they can see people who are offering or wanting activities. They can see it as a list view & they can create a offer or want.
 4. List view. Here they can see a list of the events that are postet. They can comment and create dialog with the person who created the event.
 5. Create Event. Event name, picture URL, location, event date, cost.
