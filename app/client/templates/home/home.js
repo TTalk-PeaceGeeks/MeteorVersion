@@ -15,7 +15,7 @@ Template.Home.helpers({
       if (GoogleMaps.loaded()) {
         // Map initialization options
         return {
-          center: new google.maps.LatLng(49.2827, 123.1207),
+          center: new google.maps.LatLng(49.2827, -123.1207),
           zoom: 8
         };
 
@@ -34,7 +34,7 @@ Template.Home.onCreated(function () {
       var marker = new google.maps.Marker({
         position: map.options.center,
         map: map.instance,
-        title: "Jenny"
+        title: "Going Grocery Shopping"
       });
 
       var infowindow = new google.maps.InfoWindow({
