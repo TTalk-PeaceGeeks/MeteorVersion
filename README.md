@@ -14,8 +14,25 @@ The Tea Time app is a platform with 2 angles.
 1. It's for newcomers to meet and interact with the locals. This will create a warm space where connections can be made, which otherwise would have been hard to establish for the newcomers.
 2. For the locals (Vancouverites) it creates a space where they actively can reach out to the newcomers and build bridges for people who wants to intergrate in the Canadian society. It benefits the locals because they can make a  impact and have more control over their volunteer work.
 
+##Platforms
+We're doing android, ios and web applications.
+The andoid and ios is to meet the locals in their eyeheight. The web apllication is to ensure that newcomers who might not have a computer, tablet or smartphone, still can engage on the platform. 
+
 ##Wireframes / Paper Prototype
 
-![Alt text](/img/list.jpg)
+![Alt text](/img/overall.jpg)
 
-1. Choose language. This will help us identify if they're newcomers or locals. But as well take into account that newcomers might not speak english
+1. Choose language. This will help us identify if they're newcomers or locals. But as well take into account that newcomers might not speak english, need their app to be in their language for it to be useful.
+2. Profile setup. Here we get information from the users (* = mandatory), profile picture, sex*, name/nickname*, email*, neigbourghood, bio.
+3. Map. Here they can see people who are offering or wanting activities. They can see it as a list view & they can create a offer or want.
+4. List view. Here they can see a list of the events that are postet. They can comment and create dialog with the person who created the event.
+5. Create Event. Event name, picure URL, location, event date, cost.
+(6.) Chat. Make it possible for people to chat with each other about the event. This creates a space where people can get in touch on a more personal level and feel more secure.
+(7.) Notifications. Here people can get notfied if somebody commented on their event.
+
+###Todo:
+1. Get a list of the laguages newcomers will be speaking/reading.
+1. Get a list of languages locals will be speaking/reading.
+2. Work on how they put in their negiboughood. Is it a textfield, a zip code, a map where they point out their neighboorhood or?? There's a lot of opportunities and it should take peoples privacy into account, but also newcomers lack of knowledge about the area they've moved to.
+- Create boards where people can make queries and discuss subejcts eg. "Did you know that it's legally required to wear a helmet when biking?" 
+
