@@ -15,8 +15,8 @@ Template.Home.helpers({
       if (GoogleMaps.loaded()) {
         // Map initialization options
         return {
-          center: new google.maps.LatLng(49.2827, 123.1207),
-          zoom: 8
+          center: new google.maps.LatLng(49.2827, -123.1207),
+          zoom: 12
         };
 
 
@@ -38,7 +38,7 @@ Template.Home.onCreated(function () {
       });
 
       var infowindow = new google.maps.InfoWindow({
-        content: "hello"
+        content: "Cooking with Local Food - just bring yourself"
       });
 
       marker.addListener('click', function() {
