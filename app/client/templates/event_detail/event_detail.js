@@ -18,7 +18,7 @@ Template.EventDetail.helpers({
 	},
 
 	isMyEvent: function(){
-		return true;
+		return this.created_by == Meteor.userId();
 	}
 });
 
