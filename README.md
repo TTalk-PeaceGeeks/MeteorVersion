@@ -15,3 +15,5 @@ The Tea Time app is a platform with 2 angles.
 2. For the locals (Vancouverites) it creates a space where they actively can reach out to the newcomers and build bridges for people who wants to intergrate in the Canadian society. It benefits the locals because they can make a  impact and have more control over their volunteer work.
 
 ##
+
+![Alt text](/img/to/img.jpg)
