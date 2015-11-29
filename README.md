@@ -28,7 +28,7 @@ The andoid and ios is to meet the locals at their eyelevel. The web aplication i
 3. Map. Here they can see people who are offering or wanting activities. They can see it as a list view & they can create a offer or want.
 ![Alt text](/img/map.jpg)
 4. List view. Here they can see a list of the events that are postet. They can comment and create dialog with the person who created the event.
-![Alt text](/img/map.jpg)
+![Alt text](/img/list.jpg)
 5. Create Event. Event name, picture URL, location, event date, cost.
 (6.) Chat. Make it possible for people to chat with each other about the event. This creates a space where people can get in touch on a more personal level and feel more secure.
 (7.) Notifications. Here people can get notified if somebody commented on their event.
