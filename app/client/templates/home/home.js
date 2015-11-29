@@ -38,7 +38,8 @@ Template.Home.onCreated(function () {
       });
 
       var infowindow = new google.maps.InfoWindow({
-        content: "hello"
+        content: "<h3>Going Grocery Shopping</h3>"+
+        "<h5>Just pay for your own groceries, free ride with Jay.</h5>"
       });
 
       marker.addListener('click', function() {
