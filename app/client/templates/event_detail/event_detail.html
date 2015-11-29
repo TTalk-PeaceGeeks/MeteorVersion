@@ -1,5 +1,14 @@
 <template name="EventDetail">
   <div class="event-detail">
-    <h1>Find me in app/client/templates/event_detail/event_detail</h1>
+    <h1>Details for this event</h1>
+    {{name}}
+    {{created_by}}
+
+<hr/>
+<h1>Chats</h1>
+{{> CreateChat}}
+{{#each chats}}
+{{> ChatItem}}
+{{/each}}
   </div>
 </template>

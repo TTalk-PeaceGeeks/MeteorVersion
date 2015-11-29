@@ -53,6 +53,6 @@ EventsController = RouteController.extend({
   onStop: function () {
   },
   detail: function(){
-    this.render('EventDetail', {});
+    this.render('EventDetail', {data: Events.findOne({_id: this.params._id})});
   }
 });
