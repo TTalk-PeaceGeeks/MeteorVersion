@@ -15,6 +15,10 @@ Template.EventDetail.helpers({
 // console.log(debug);
 // console.log(Chats.findOne({event_id: this._id}, {sort: {createdAt: -1}}));
 		return Chats.find({event_id: this._id}, {sort: {createdAt: -1}});
+	},
+
+	isMyEvent: function(){
+		return true;
 	}
 });
 

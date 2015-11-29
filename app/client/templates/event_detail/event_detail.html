@@ -1,8 +1,21 @@
 <template name="EventDetail">
   <div class="event-detail">
+  	
+  	{{#if get 'isEditing'}}
+  	<h1>isEditing is true; Getting edit</h1>
+  	{{/if}}
+  	{{> CreateEvent}}
+
     <h1>Details for this event</h1>
     {{name}}
     {{created_by}}
+
+    {{#if isMyEvent}}
+
+	{{#linkTo route='event.edit'}}
+	    <h4>Edit</h4>
+	    {{/linkTo}}
+    {{/if}}
 
 <hr/>
 <h1>Chats</h1>

@@ -29,3 +29,10 @@ Router.route('event/:_id', {
   where: 'client',
   action: 'detail'
 });
+
+Router.route('event/:_id/edit', {
+  name: 'event.edit',
+  controller: 'EventsController',
+  action: 'edit',
+  where: 'client'
+});
