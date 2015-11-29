@@ -4,7 +4,7 @@
 Template.EventDetail.events({
 	'submit form': function(e, tmpl){
 		e.preventDefault();
-
+		console.log(this);
 		Events.update({_id: this._id},
 		{
 			$set: {
