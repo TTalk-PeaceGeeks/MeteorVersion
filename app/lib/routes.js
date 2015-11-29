@@ -16,3 +16,9 @@ Router.route('profile', {
   controller: 'ProfileController',
   where: 'client'
 });
+
+Router.route('events', {
+  name: 'events',
+  controller: 'EventsController',
+  where: 'client'
+});
