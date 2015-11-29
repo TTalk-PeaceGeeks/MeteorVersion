@@ -1,10 +1,12 @@
 <template name="EventItem">
 	<div class="event-item container">
 		{{#linkTo route='event.detail'}}
-		<h2>Event</h2>
-		{{/linkTo}}
 		<h3>{{name}}</h3>
-		<h4> $ {{cost}}</h4>
+
+		{{/linkTo}}
+		<h3> Event Name: {{name}}</h3>
+		<h4> Cost: $ {{cost}}</h4>
+		<h4> Created By: {{creator}}</h4>
 
 	</div>
 </template>

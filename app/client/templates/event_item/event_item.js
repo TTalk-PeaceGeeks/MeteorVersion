@@ -8,6 +8,9 @@ Template.EventItem.events({
 /* EventItem: Helpers */
 /*****************************************************************************/
 Template.EventItem.helpers({
+	creator: function(){
+		return Profiles.findOne({owner_id: this.created_by}).name;
+	}
 });
 
 /*****************************************************************************/
