@@ -2,9 +2,8 @@
   <div class="event-detail">
   	
   	{{#if get 'isEditing'}}
-  	<h1>isEditing is true; Getting edit</h1>
+    {{> CreateEvent}}
   	{{/if}}
-  	{{> CreateEvent}}
 
     <h1>Details for this event</h1>
     {{name}}

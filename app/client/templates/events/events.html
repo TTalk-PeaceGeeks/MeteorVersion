@@ -1,8 +1,12 @@
 <template name="Events">
-  <div class="events">
-    <h1>A list of events to get you started</h1>
-    {{#each events}}
-    {{> EventItem}}
-    {{/each}}
-  </div>
+	<div class="events">
+		<h1>Create an Event: </h1>
+
+		{{> CreateEvent}}
+		<hr/>
+	<h1>A list of events to get you started</h1>
+	{{#each events}}
+	{{> EventItem}}
+	{{/each}}
+</div>
 </template>
