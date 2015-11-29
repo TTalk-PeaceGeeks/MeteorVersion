@@ -2,6 +2,8 @@
 /* Home: Event Handlers */
 /*****************************************************************************/
 Template.Home.events({
+  
+
 });
 
 /*****************************************************************************/
@@ -16,21 +18,34 @@ Template.Home.helpers({
           center: new google.maps.LatLng(-37.8136, 144.9631),
           zoom: 8
         };
+
+
       }
     }
-});
+  });
 
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */
 /*****************************************************************************/
 Template.Home.onCreated(function () {
 	// We can use the `ready` callback to interact with the map API once the map is ready.
-    GoogleMaps.ready('exampleMap', function(map) {
+  GoogleMaps.ready('exampleMap', function(map) {
       // Add a marker to the map once it's ready
       var marker = new google.maps.Marker({
         position: map.options.center,
-        map: map.instance
+        map: map.instance,
+        title: "Jenny"
       });
+
+      var infowindow = new google.maps.InfoWindow({
+        content: "hello"
+      });
+
+      marker.addListener('click', function() {
+        console.log("hey click");
+        infowindow.open(GoogleMaps.maps.exampleMap.instance, marker);
+      });
+      
     });
 });
 
