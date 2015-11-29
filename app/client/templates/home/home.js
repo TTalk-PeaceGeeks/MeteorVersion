@@ -2,7 +2,7 @@
 /* Home: Event Handlers */
 /*****************************************************************************/
 Template.Home.events({
-  
+
 
 });
 
@@ -15,7 +15,7 @@ Template.Home.helpers({
       if (GoogleMaps.loaded()) {
         // Map initialization options
         return {
-          center: new google.maps.LatLng(-37.8136, 144.9631),
+          center: new google.maps.LatLng(49.2827, 123.1207),
           zoom: 8
         };
 
@@ -45,7 +45,7 @@ Template.Home.onCreated(function () {
         console.log("hey click");
         infowindow.open(GoogleMaps.maps.exampleMap.instance, marker);
       });
-      
+
     });
 });
 
