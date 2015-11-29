@@ -10,6 +10,10 @@ Template.ChatItem.events({
 Template.ChatItem.helpers({
 	time: function(){
 		return moment(this.CreatedAt).fromNow();
+	},
+
+	author: function(){
+		return Profiles.findOne({owner_id: this.author_id}).name;
 	}
 });
 
