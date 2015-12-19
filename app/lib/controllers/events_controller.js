@@ -57,6 +57,6 @@ EventsController = RouteController.extend({
   },
   edit: function(){
     this.state.set('isEditing', true);
-    this.render('EventDetail');
+    this.render('EventDetail', {data: Events.findOne({_id: this.params._id})});
   }
 });

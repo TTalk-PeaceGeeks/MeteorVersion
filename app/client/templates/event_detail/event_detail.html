@@ -1,58 +1,58 @@
 <template name="EventDetail">
-  <div class="event-detail">
+  <div class="event-detail container">
   	
   	{{#if get 'isEditing'}}
    <div class="container">
-      <form>
-        <div class="form-group">
-          <label for="name">Event Name</label>
-          <input type="text" id="name" placeholder="i.e. Learning English">
-        </div>
+    <form id="editForm">
+      <div class="form-group">
+        <label for="name">Event Name</label>
+        <input type="text" id="name" placeholder="i.e. Learning English">
+      </div>
 
 
-        <div class="form-group">
-          <label for="picture">Picture URL</label>
-          <input type="text" id="picture" placeholder="Paste a photo url here...">
-        </div>
+      <div class="form-group">
+        <label for="picture">Picture URL</label>
+        <input type="text" id="picture" placeholder="Paste a photo url here...">
+      </div>
 
 
-        <div class="form-group">
-          <label for="location">Location</label>
-          <input type="text" id="location" placeholder="i.e. Fraser and 41st">
-        </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="i.e. Fraser and 41st">
+      </div>
 
-        <div class="form-group">
-          <label for="date">Event Date</label>
-          <input type="text" id="eventDate" placeholder="December 27, 2016">
-        </div>
+      <div class="form-group">
+        <label for="date">Event Date</label>
+        <input type="text" id="eventDate" placeholder="December 27, 2016">
+      </div>
 
 
-        <div class="form-group">
-          <label for="major">Cost</label>
-          <input type="text" id="cost" placeholder="i.e. Free">
-        </div>
-        <button id="button" class="btn" type="submit">Save</button>
+      <div class="form-group">
+        <label for="major">Cost</label>
+        <input type="text" id="cost" placeholder="i.e. Free">
+      </div>
+      <button id="button" class="btn" type="submit">Save</button>
 
-      </form>
-    </div>
-  	{{/if}}
-
-    <h1>Details for this event</h1>
-    {{name}}
-    {{created_by}}
-
-    {{#if isMyEvent}}
-
-	{{#linkTo route='event.edit'}}
-	    <h4>Edit</h4>
-	    {{/linkTo}}
-    {{/if}}
-
-<hr/>
-<h1>Chats</h1>
-{{> CreateChat}}
-{{#each chats}}
-{{> ChatItem}}
-{{/each}}
+    </form>
   </div>
+  {{/if}}
+
+  <h1>Details for this event</h1>
+  {{name}}
+  {{created_by}}
+
+  {{#if isMyEvent}}
+
+  {{#linkTo route='event.edit'}}
+  <h4>Edit</h4>
+  {{/linkTo}}
+  {{/if}}
+
+  <hr/>
+  <h1>Chats</h1>
+  {{> CreateChat}}
+  {{#each chats}}
+  {{> ChatItem}}
+  {{/each}}
+</div>
 </template>
